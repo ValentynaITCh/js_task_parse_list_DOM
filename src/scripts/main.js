@@ -29,7 +29,7 @@ function getEmployees(list) {
     employees.push({
       name: li.textContent,
       position: li.dataset.position,
-      salary: li.dataset.salary,
+      salary: parseSalary(li.dataset.salary),
       age: li.dataset.age,
     }),
   );
